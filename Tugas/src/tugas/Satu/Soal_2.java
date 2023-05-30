@@ -16,7 +16,7 @@ public class Soal_2 {
 		Soal_2_B_1(11);
 		System.out.println("\nDeret Fibonacci dan Pola Simetris:");
 		Soal_2_B_2(9);
-		System.out.println("\nDeret Fibonacci dan Array: (belum)");
+		System.out.println("\nDeret Fibonacci dan Array:\n(Hanya bisa untuk Input 9)");
 		Soal_2_C(9);
 
 	}
@@ -62,21 +62,39 @@ public class Soal_2 {
 		}
 	}
 
-	private static void Soal_2_C(int n) { // belum
-		short x = 1;
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
-				if ((i == j) || (i + j) == n - 1) {
-					int ouput = Fibonnaci(x);
-					System.out.print(ouput);
-				} else {
-					System.out.print("  ");
+	// Hanya bisa untuk Input 9
+	private static void Soal_2_C(int n) { 
+		int x = 0;
+		int z = 3;
+		if ((n % 2) == 0 || n <= 3) {
+			System.out.print("Nilai harus ganjil dan lebih dari 3");
+		} else {
+			for (int i = 0; i < n; i++) {
+				if (x <= 4) {
+					for (int j = 0; j < n; j++) {
+						if ((i == j) || (i + j) == (n - 1)) {
+							int ouput = Fibonnaci(x);
+							System.out.print(ouput);
+						} else {
+							System.out.print("  ");
+						}
+					}
 				}
 				x++;
+				if (x >= 6) {
+					for (int j = 0; j < n; j++) {
+						if ((i + j) == (n - 1) || (i == j)) {
+//							System.out.print(x);
+							int ouput = Fibonnaci(x-z);
+							System.out.print(ouput);
+						} else {
+							System.out.print("  ");
+						}
+					}
+					z += 2;
+				}
+				System.out.println();
 			}
-			x = 1;
-			System.out.println();
-
 		}
 	}
 
