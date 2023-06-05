@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 public class CRUD_60 {
 
 	public static void main(String[] args) throws IOException {
-		
+
 		Scanner terminalInput = new Scanner(System.in);
 		String pilihanUser;
 		boolean isLanjutan = true;
@@ -66,8 +66,40 @@ public class CRUD_60 {
 	}
 
 	public static void tampilkanData() throws IOException {
-		System.out.println("kita akan menampilkan data disini brader");
-		boolean isTambah = getYesorNo("Apakah Anda ingin melanjutkan?");
+
+		FileReader fileInput;
+		BufferedReader bufferInput;
+
+		try {
+			fileInput = new FileReader("./database.txt");
+			bufferInput = new BufferedReader(fileInput);
+		} catch (Exception e) {
+			System.err.println("Database Tidak ditemukan");
+			System.err.println("Silahkan tambah data terlebih dahulu");
+			return;
+		}
+
+		System.out.println("\n| No |\tTahun |\tPenulis                |\tPenerbit               |\tJudul Buku");
+		System.out.println(
+				"----------------------------------------------------------------------------------------------------------");
+
+		String data = bufferInput.readLine();
+		int nomorData = 0;
+		while (data != null) {
+			nomorData++;
+
+			StringTokenizer stringToken = new StringTokenizer(data, ",");
+			System.out.printf("| %2d ", nomorData);
+			System.out.printf("|\t%4s  ", stringToken.nextToken());
+			System.out.printf("|\t%-20s   ", stringToken.nextToken());
+			System.out.printf("|\t%-20s   ", stringToken.nextToken());
+			System.out.printf("|\t%s   ", stringToken.nextToken());
+			System.out.println("\n");
+
+			data = bufferInput.readLine();
+		}
+		System.out.println(
+				"----------------------------------------------------------------------------------------------------------");
 	}
 
 	public static boolean getYesorNo(String message) {
