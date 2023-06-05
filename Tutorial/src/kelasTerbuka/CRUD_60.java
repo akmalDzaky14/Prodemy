@@ -1,10 +1,12 @@
 package kelasTerbuka;
 
 import java.io.IOException;
-import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.File;
+import java.util.Scanner;
 import java.util.StringTokenizer;
+import java.util.Arrays;
 
 public class CRUD_60 {
 
@@ -37,7 +39,7 @@ public class CRUD_60 {
 				System.out.println("\n=========");
 				System.out.println("CARI BUKU");
 				System.out.println("=========");
-				// cari data
+				cariData();
 				break;
 			case "3":
 				System.out.println("\n================");
@@ -62,6 +64,67 @@ public class CRUD_60 {
 			}
 			isLanjutan = getYesorNo("Apakah Anda ingin melanjutkan?");
 		}
+
+	}
+
+	public static void cariData() throws IOException {
+		// membaca database ada atau tidak
+
+		try {
+			File file = new File("./database.txt");
+		} catch (Exception e) {
+			System.err.println("Database tidak ditemukan!");
+			System.err.println("Silahkan tambahkan terlebihdahulu");
+			return;
+		}
+
+		// ambil keyword dari user
+
+		Scanner terminalInput = new Scanner(System.in);
+		System.out.println("Masukkan kata kunci untuk mencari buku: ");
+		String cariString = terminalInput.nextLine();
+		String[] keyword = cariString.split("\\s+");
+
+		// cek keyword di database
+		cekBukuDiDatabase(keyword);
+	}
+
+	public static void cekBukuDiDatabase(String[] keywords) throws IOException {
+		FileReader fileInput = new FileReader("./database.txt");
+		BufferedReader bufferInput = new BufferedReader(fileInput);
+
+		String data = bufferInput.readLine();
+		boolean isExist;
+		int nomorData = 0;
+		System.out.println("\n| No |\tTahun |\tPenulis                |\tPenerbit               |\tJudul Buku");
+		System.out.println(
+				"----------------------------------------------------------------------------------------------------------");
+		while (data != null) {
+			// cek keywords di dalam baris
+			isExist = true;
+
+			for (String keyword : keywords) {
+				isExist = isExist && data.toLowerCase().contains(keyword.toLowerCase());
+			}
+
+			// jika keywordsnya cocok maka tampilkan
+
+			if (isExist) {
+				nomorData++;
+				StringTokenizer stringToken = new StringTokenizer(data, ",");
+
+				stringToken.nextToken();
+				System.out.printf("| %2d ", nomorData);
+				System.out.printf("|\t%4s  ", stringToken.nextToken());
+				System.out.printf("|\t%-20s   ", stringToken.nextToken());
+				System.out.printf("|\t%-20s   ", stringToken.nextToken());
+				System.out.printf("|\t%s   ", stringToken.nextToken());
+				System.out.print("\n");
+			}
+			data = bufferInput.readLine();
+		}
+		System.out.println(
+				"----------------------------------------------------------------------------------------------------------");
 
 	}
 
