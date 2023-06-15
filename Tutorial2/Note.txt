@@ -1,0 +1,38 @@
+/*
+ * File: Note.txt
+ * Project: Tutorial2
+ * File Created: Wednesday, 7th June 2023 5:28:27 pm
+ * Author: Akmal Dzaky H (akmaldzaky33@gmail.com)
+ * -----
+ * Last Modified: Wednesday, 14th June 2023 10:25:32 am
+ * Modified By: Akmal Dzaky H (akmaldzaky33@gmail.com>)
+ * -----
+ * Copyright (c) 2023 PT. Pro Sigmaka Mandiri
+ */
+
+03 - Pengenalan Class dan Object
+04 - Constructor
+05 - Method
+06 - Latihan Part 1 
+07 - Latihan Part 2
+08 - Reference pada Object
+09
+10
+11
+12
+13
+14 - Static Methods atau Class Methods
+15 - Multi File
+16 - Hierarki Package (default, public, static)
+17 - Overloading Constructor dan Method
+18 - Pengenalan Inheritance
+19 - Overriding Methods (inheritance)
+20 - Super (inheritance)
+21 - Subclass Constructor (inheritance)
+22 - Latihan Inheritance
+23 - Polymorphism
+24 - Final, Public, Private keyword (Inheritance)
+25 - Object Casting
+26 - Abstract Class
+27 - Abstract Method
+28 - Protected Keyword

@@ -1,0 +1,169 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // UNTUK DEBUG
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_21.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_20.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_19.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_18.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_17.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_16.tutorial.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_15.tutorial.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_14.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_13.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_11_12.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_3.Main",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "OOP_10",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_10",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "OOP_09",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_09",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "OOP_08",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_08",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Experiment",
+            "request": "launch",
+            "mainClass": "tutorial.Latihan.Experiment",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Soal_1",
+            "request": "launch",
+            "mainClass": "tutorial.Latihan.Soal_1",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Soal_2",
+            "request": "launch",
+            "mainClass": "tutorial.Latihan.Soal_2",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "OOP_06_07",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_06_07",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "OOP_06",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_06",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "OOP_04",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_04",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "OOP_05",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_05",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "OOP_03",
+            "request": "launch",
+            "mainClass": "tutorial.kelasTerbuka.OOP_03",
+            "projectName": "Tutorial2_faeb3b2a"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
