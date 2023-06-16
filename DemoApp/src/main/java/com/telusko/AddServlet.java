@@ -3,7 +3,7 @@ package com.telusko;
  * History: 
  * 8. RequestDispatcher and Calling Servlet on Servlet
  * 9. sendRedirect and URL Rewriting
- * 10. Session and Cookie
+ * 10. Session and Cookie	
  * */
 
 import java.io.IOException;
@@ -11,6 +11,7 @@ import java.io.PrintWriter;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -24,12 +25,11 @@ public class AddServlet extends HttpServlet {
 
 		int addData = dataNum1 + dataNum2;
 
-		// Calling HttpSessions method and create a session
-		HttpSession session = req.getSession();
-		
-		// Assign data to variable "data1"
-		session.setAttribute("data1", addData);
-		
+		// Call method library cookie and assign add data to data1 object
+		Cookie cookie = new Cookie("data1", addData + "");
+		// Assign cookie object to res object
+		res.addCookie(cookie);
+
 		// send data to /sq url-pattern
 		res.sendRedirect("sq");
 	}
