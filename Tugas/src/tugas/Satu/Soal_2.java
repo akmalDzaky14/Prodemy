@@ -10,15 +10,23 @@ public class Soal_2 {
 //			System.out.print("mengambil nilai fibonnaci ke - :");
 //			n = inputUser.nextInt();
 //		}
-		System.out.println("Fibonacci:");
-		Soal_2_A(11);
-		System.out.println("\nPola Simetris:");
-		Soal_2_B_1(11);
-		System.out.println("\nDeret Fibonacci dan Pola Simetris:");
-		Soal_2_B_2(9);
+//		System.out.println("Fibonacci:");
+//		Soal_2_A(11);
+//		System.out.println("\nPola Simetris:");
+//		Soal_2_B_1(11);
+//		System.out.println("\nDeret Fibonacci dan Pola Simetris:");
+//		Soal_2_B_2(11);
 		System.out.println("\nDeret Fibonacci dan Array:\n(Hanya bisa untuk Input 9)");
-		Soal_2_C(9);
+		Soal_2_C(11);
 
+	}
+
+	public static int Fibonnaci(int n) {
+		// Pola Simetris atau Palindromik dan Fibonacci dengan fungsi rekursif
+		if (n == 0 || n == 1)
+			return 1;
+		else
+			return Fibonnaci(n - 1) + Fibonnaci(n - 2);
 	}
 
 	public static void Soal_2_A(int n) {
@@ -63,7 +71,8 @@ public class Soal_2 {
 	}
 
 	// Hanya bisa untuk Input 9
-	private static void Soal_2_C(int n) { 
+	private static void Soal_2_C(int n) {
+		int k = (n / 2) + 1;
 		int x = 0;
 		int z = 3;
 		if ((n % 2) == 0 || n <= 3) {
@@ -85,7 +94,7 @@ public class Soal_2 {
 					for (int j = 0; j < n; j++) {
 						if ((i + j) == (n - 1) || (i == j)) {
 //							System.out.print(x);
-							int ouput = Fibonnaci(x-z);
+							int ouput = Fibonnaci(x - z);
 							System.out.print(ouput);
 						} else {
 							System.out.print("  ");
@@ -96,13 +105,5 @@ public class Soal_2 {
 				System.out.println();
 			}
 		}
-	}
-
-	public static int Fibonnaci(int n) {
-		// Pola Simetris atau Palindromik dan Fibonacci dengan fungsi rekursif
-		if (n == 0 || n == 1)
-			return 1;
-		else
-			return Fibonnaci(n - 1) + Fibonnaci(n - 2);
 	}
 }
