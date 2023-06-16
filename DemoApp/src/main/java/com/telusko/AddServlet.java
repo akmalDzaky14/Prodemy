@@ -1,4 +1,9 @@
 package com.telusko;
+/* 
+ * History: 
+ * 8. RequestDispatcher and Calling Servlet on Servlet
+ * 9. sendRedirect and URL Rewriting
+ * */
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -17,14 +22,7 @@ public class AddServlet extends HttpServlet {
 
 		int addData = dataNum1 + dataNum2;
 
-		// Notion: Attributes in Servlets | Java
-		req.setAttribute("data1", addData);
-
-		// Calling other Servlet
-		RequestDispatcher reqDispatch1 = req.getRequestDispatcher("sq");
-
-		// forward variable/object value to other 'req' object (receive with
-		// "getAttribute")
-		reqDispatch1.forward(req, res);
+		// sendRedirect + URL Rewriting
+		res.sendRedirect("sq?k="+addData);
 	}
 }

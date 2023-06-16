@@ -9,13 +9,13 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class SqServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
-		
-		// Receive request value from 'req' object
-		int data1 = (int) req.getAttribute("data1");
+
+		// Receive data from URL
+		int data1 = Integer.parseInt(req.getParameter("k"));
 
 		data1 = data1 * data1;
 
 		PrintWriter out = res.getWriter();
-		out.print("squared result Is " + data1);
+		out.print("squared result is: " + data1);
 	}
 }
