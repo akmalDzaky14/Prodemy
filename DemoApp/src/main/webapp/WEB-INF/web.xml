@@ -9,6 +9,10 @@
 		<servlet-name>home</servlet-name>
 		<servlet-class>
 			com.telusko_14.MyServlet</servlet-class>
+		<init-param>
+			<param-name>Name</param-name>
+			<param-value>Dzaky</param-value>
+		</init-param>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>home</servlet-name>
@@ -28,7 +32,8 @@
 	<servlet>
 		<servlet-name>asd</servlet-name>
 		<servlet-class>
-			com.telusko.AddServlet</servlet-class>
+			com.telusko.AddServlet
+		</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>asd</servlet-name>
