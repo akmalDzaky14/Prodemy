@@ -23,12 +23,15 @@ public class AddServlet extends HttpServlet {
 
 		int addData = dataNum1 + dataNum2;
 
-		// Call method library cookie and assign add data to data1 object
-		Cookie cookie = new Cookie("data1", addData + "");
-		// Assign cookie object to res object
-		res.addCookie(cookie);
+		PrintWriter out = res.getWriter();
+		out.print("Output: " + addData);
 
-		// send data to /sq url-pattern
-		res.sendRedirect("sq");
+//		// Call method library cookie and assign add data to data1 object
+//		Cookie cookie = new Cookie("data1", addData + "");
+//		// Assign cookie object to res object
+//		res.addCookie(cookie);
+//
+//		// send data to /sq url-pattern
+//		res.sendRedirect("sq");
 	}
 }
