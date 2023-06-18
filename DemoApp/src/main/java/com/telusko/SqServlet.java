@@ -4,8 +4,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import jakarta.servlet.http.Cookie;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 
+@WebServlet("/sq")
 public class SqServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 
