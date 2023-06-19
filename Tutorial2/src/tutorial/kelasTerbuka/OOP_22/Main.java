@@ -1,4 +1,15 @@
 package tutorial.kelasTerbuka.OOP_22;
+/*
+ * File: Main.java
+ * Project: OOP_22
+ * File Created: Monday, 19th June 2023 8:05:14 am
+ * Author: Akmal Dzaky H (akmaldzaky33@gmail.com)
+ * -----
+ * Last Modified: Monday, 19th June 2023 9:02:40 am
+ * Modified By: Akmal Dzaky H (akmaldzaky33@gmail.com>)
+ * -----
+ * Copyright (c) 2023 PT. Pro Sigmaka Mandiri
+ */
 
 public class Main {
     public static void main(String[] args) {

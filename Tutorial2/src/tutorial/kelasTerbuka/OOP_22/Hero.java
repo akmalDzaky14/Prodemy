@@ -1,4 +1,15 @@
 package tutorial.kelasTerbuka.OOP_22;
+/*
+ * File: Hero.java
+ * Project: OOP_22
+ * File Created: Monday, 19th June 2023 8:04:50 am
+ * Author: Akmal Dzaky H (akmaldzaky33@gmail.com)
+ * -----
+ * Last Modified: Monday, 19th June 2023 9:02:36 am
+ * Modified By: Akmal Dzaky H (akmaldzaky33@gmail.com>)
+ * -----
+ * Copyright (c) 2023 PT. Pro Sigmaka Mandiri
+ */
 
 public class Hero {
     // attribute

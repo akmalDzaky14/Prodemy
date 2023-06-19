@@ -1,9 +1,20 @@
 package tutorial.kelasTerbuka.OOP_22;
+/*
+ * File: HeroStrength.java
+ * Project: OOP_22
+ * File Created: Monday, 19th June 2023 8:05:05 am
+ * Author: Akmal Dzaky H (akmaldzaky33@gmail.com)
+ * -----
+ * Last Modified: Monday, 19th June 2023 9:02:31 am
+ * Modified By: Akmal Dzaky H (akmaldzaky33@gmail.com>)
+ * -----
+ * Copyright (c) 2023 PT. Pro Sigmaka Mandiri
+ */
 
 public class HeroStrength extends Hero {
     String type = "Strength";
 
-    // subclass constructor
+    // subclass constructor, wajib ada jika di superclass terdapat constructor
     public HeroStrength(String nameInput, double attackInput, double healthInput) {
         super(nameInput, attackInput, healthInput);
     }
