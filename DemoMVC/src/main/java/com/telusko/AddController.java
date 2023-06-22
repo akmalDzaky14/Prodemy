@@ -13,6 +13,7 @@ import com.telusko.service.AddService;
 @Controller
 public class AddController {
 	@RequestMapping("/add")
+	// @RequestParam("t1") int input1 => menerima input dari browser dan di simpan ke input1
 	public ModelAndView add(@RequestParam("t1") int input1, @RequestParam("t2") int input2, HttpServletRequest req,
 			HttpServletResponse res) {
 
@@ -20,7 +21,8 @@ public class AddController {
 		int hasil = tambah.add(input1, input2);
 
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("display.jsp");
+		mv.setViewName("display");
+		// mv.setViewName("display"); akan memeriksa di webinitializer dan teluskoConfig apakah display.jsp ada atau tidak
 		mv.addObject("result", hasil);
 
 		return mv;

@@ -2,13 +2,5 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
-	<servlet>
-		<servlet-name>telusko</servlet-name>
-		<!-- ini bukan path pada tomcat -->
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>telusko</servlet-name>
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
+	<!-- Tidak butuh karena sudah ada  WebInitializer dan TeluskoConfig  -->
 </web-app>
